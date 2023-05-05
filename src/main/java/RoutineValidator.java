@@ -18,6 +18,6 @@ public class RoutineValidator implements Validator {
 
     public static void main(String[] args){
         RoutineValidator validator = new RoutineValidator();
-        System.out.println(validator.validate("Tahiel", "A1"));
+        System.out.println(validator.validate("Tahiel", "Bicicleta1"));
     }
 }
