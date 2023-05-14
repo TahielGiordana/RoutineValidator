@@ -14,10 +14,10 @@ public class RoutineValidator implements Validator {
             }
         }
         return false;
-    };
+    }
 
-    public static void main(String[] args){
-        RoutineValidator validator = new RoutineValidator();
-        System.out.println(validator.validate("Tahiel", "Bicicleta1"));
+    @Override
+    public String getName() {
+        return "ROUTINE";
     }
 }

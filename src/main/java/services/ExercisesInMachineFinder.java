@@ -17,7 +17,7 @@ public class ExercisesInMachineFinder {
         try{
             File file = new File("");
             String path = file.getAbsolutePath() + File.separator + "files" + File.separator + "ExercisesByMachine.json";
-            System.out.println("Se buscan Ejercicios por Máquina en: " + path);
+            System.out.println("Se buscan Ejercicios por Maquina en: " + path);
 
             JSONArray jsonArray = (JSONArray) parser.parse(new FileReader(path));
             for(Object jsonEntry : jsonArray){
@@ -29,10 +29,10 @@ public class ExercisesInMachineFinder {
             }
 
         } catch (IOException | ParseException e) {
-
+            System.out.println("error al obtener ejericios: " + e.getMessage());
         }
 
-        System.out.println("La máquina "+machineCode+" permite hacer: "+exercises);
+        System.out.println("La maquina "+machineCode+" permite hacer: "+exercises);
         return exercises;
     }
 }
